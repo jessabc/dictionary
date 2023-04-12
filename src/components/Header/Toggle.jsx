@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
 import { MoonIcon } from '@heroicons/react/24/outline'
 
+// toggle switch, credit to https://dev.to/larainfo/toggle-switch-in-react-js-with-tailwind-css-example-jfk
+// theme switch, credit to https://www.youtube.com/watch?v=VylXkPy-MIc
 
 export default function Toggle() {
 
-    const [enabled, setEnabled] = useState(false);
+    const [enabled, setEnabled] = useState(false)
     const [theme, setTheme] = useState(null)
 
     useEffect(() => {
@@ -33,12 +35,12 @@ export default function Toggle() {
             <div className="flex">
                 <label className="inline-flex relative items-center  cursor-pointer">
                   <input
-                      type="checkbox"
-                      className="sr-only peer"
-                      checked={enabled}
-                      readOnly
+                    type="checkbox"
+                    className="sr-only peer"
+                    checked={enabled}
+                    readOnly
                   />
-                  
+
                   <div
                     onClick={handleThemeSwitch}
                     className="w-11 h-6 bg-purple-500 rounded-full peer  peer-focus:ring-green-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-zinc-600"

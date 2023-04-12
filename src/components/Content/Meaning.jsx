@@ -1,7 +1,7 @@
 export default function Meaning({meaning, handleOnclick}) {
 
     return (
-        <div>
+        <div className="h-full">
             <p className="partOfSpeech flex flex-row after:ml-3 font-semibold italic after:flex-auto after:m-auto after:border-b-2 after:border-solid after:text-zinc-900 text-xl dark:text-zinc-50 mt-8">{meaning.partOfSpeech}</p>
             <p className="text-zinc-500 py-3 text-xl ">Meaning</p>
 

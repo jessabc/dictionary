@@ -1,4 +1,4 @@
-import {useState, createContext} from 'react'
+import { useState, createContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export const Context = createContext()
@@ -6,8 +6,8 @@ export const Context = createContext()
 export function ContextProvider({children}) {
 
     const [input, setInput] = useState('')
-    const [wordData, setWordData] = useState(null)
-    const [loading, setLoading] = useState(false)
+    const [wordData, setWordData] = useState()
+    const [loading, setLoading] = useState()
     const [error, setError] = useState()
 
     const navigate = useNavigate()
@@ -18,9 +18,8 @@ export function ContextProvider({children}) {
         setError(null)
 
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
-            .then(res => res.json())
-            .then(data =>{
-
+            .then(res => res.json()) 
+            .then(data => {
                 if(data[0]) {
                     setWordData(data[0])  
                 } else {
@@ -32,6 +31,7 @@ export function ContextProvider({children}) {
             })
     }
 
+    
     return (
         <Context.Provider 
             value={{input, setInput, wordData, setWordData, loading, setLoading, error, setError, fetchData }}>

@@ -1,23 +1,20 @@
 import './App.css'
-import Layout from "./pages/Layout"
-import Word from "./pages/Word"
-import NoPage from "./pages/NoPage"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { ContextProvider } from './Context'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main"
+
 
 function App() {
  
   return (
    <div className='dark:bg-zinc-900'>
       <BrowserRouter>
-      <ContextProvider>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/:word" element={<Word />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-      </ContextProvider>
+        <ContextProvider>
+          <Routes>
+            <Route path="/" element={<Main />}/>
+              <Route path="/:word" element={<Main />} />    
+          </Routes>
+        </ContextProvider>
     </BrowserRouter>
    </div>      
   )

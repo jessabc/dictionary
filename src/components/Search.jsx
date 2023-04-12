@@ -4,7 +4,7 @@ import iconSearch from '../assets/images/icon-search.svg'
 
 export default function Search() {
 
-    const {input, setInput, wordData, setWordData, loading, setLoading, fetchData} = useContext(Context)
+    const {input, setInput, fetchData} = useContext(Context)
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -12,7 +12,7 @@ export default function Search() {
     }
 
     return (
-        <div className={`mb-8 `}>
+        <div className={`mb-8`}>
             <form onSubmit={handleSubmit} className='relative'>
                 <input 
                     type="text" 
@@ -20,10 +20,9 @@ export default function Search() {
                     placeholder="Search for a word..." 
                     value={input}
                     onChange={(e) => setInput(e.target.value)}/>
-               
                     <button>
                         <div className='absolute right-0 top-0 hover:bg-zinc-200 py-8 px-7 rounded-tr-lg rounded-br-lg'>
-                            <img src={iconSearch} alt="" className='absolute right-5 top-5 '/>
+                            <img src={iconSearch} alt="" className='absolute right-5 top-5'/>
                         </div> 
                     </button>
             </form>
