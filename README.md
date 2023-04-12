@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/jessabc/dictionary] https://github.com/jessabc/dictionary)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github] (https://github.com/jessabc/dictionary)
+- Live Site URL: [Dictionary app](https://brilliant-liger-921998.netlify.app)
 
 ## My process
 
@@ -52,20 +52,20 @@ Users should be able to:
 ### What I learned
 
 - After doing a React Router v6 course, I tried to apply it to this project
-- used error and loading state
-- using a loading animation 
-- using audio 
+- Used error and loading state
+- Using a loading animation 
+- Using audio 
 
 
 ### Continued development
-I would like to continue to use React Router in a bigger project
+I would like to continue to use React Router, and get more comfortable with it, especially in a bigger project
 
 
 ### Useful resources
 
 - [Toggle Switch](https://dev.to/larainfo/toggle-switch-in-react-js-with-tailwind-css-example-jfk) - I used this for the toggle switch
-- [theme switch](https://www.youtube.com/watch?v=VylXkPy-MIc) - This is short and simple youtube tutorial which I have used many times.
-- [loader animation](https://www.w3schools.com/howto/howto_css_loader.asp) - I used this for the loading animation, I would like to do more loading animations in the future, I think it really adds to the project
+- [Theme Switch](https://www.youtube.com/watch?v=VylXkPy-MIc) - This is short and simple youtube tutorial which I have used many times.
+- [Loading animation](https://www.w3schools.com/howto/howto_css_loader.asp) - I used this for the loading animation, I would like to do more loading animations in the future, I think it really adds to the project
 
 
 ## Author
