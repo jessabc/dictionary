@@ -5,7 +5,7 @@ export const Context = createContext()
 
 export function ContextProvider({children}) {
 
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState()
     const [wordData, setWordData] = useState()
     const [loading, setLoading] = useState()
     const [error, setError] = useState()
