@@ -46,7 +46,7 @@ Users should be able to:
 - Tailwind CSS
 - Mobile-first workflow
 - React Router
-- [React](https://reactjs.org/) 
+- [React](https://reactjs.org/) - JS library
 
 
 ### What I learned
