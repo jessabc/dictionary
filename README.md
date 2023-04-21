@@ -46,7 +46,7 @@ Users should be able to:
 - Tailwind CSS
 - Mobile-first workflow
 - React Router
-- [React](https://reactjs.org/) 
+- [React](https://reactjs.org/) - JS library
 
 
 ### What I learned
@@ -70,8 +70,7 @@ I would like to continue to use React Router, and get more comfortable with it, 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [My Portfolio](https://app.netlify.com/sites/kaleidoscopic-speculoos-9506a0/overview)
 
 
 ## Acknowledgments
