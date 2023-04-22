@@ -19,6 +19,7 @@ export default function Word() {
   
   function handleOnclick(synonym) {
     fetchData(synonym)
+    window.scrollTo(0, 0)
   }
   
 
@@ -40,7 +41,7 @@ export default function Word() {
             <p className='text-purple-500 text-xl '>{wordData?.phonetic}</p>
           </div>
           <button className='ml-auto hover:bg-purple-300 rounded-full'>
-            <img src={iconPlay} alt="" onClick={() => audio.play()}/>
+            <img src={iconPlay} alt="play icon" onClick={() => audio.play()}/>
           </button>
         </div>
         {meaningElements}
@@ -48,7 +49,7 @@ export default function Word() {
         <div className='flex gap-3 pt-5 pb-10 items-end flex-wrap '> 
           <p className='text-zinc-500 text-sm'>Source: </p>
           <a href={wordData?.sourceUrls[0]} target="_blank" className='flex gap-3 dark:text-zinc-50'>{wordData?.sourceUrls[0]}
-            <img src={iconNewWindow} alt="" />
+            <img src={iconNewWindow} alt="new window icon" />
           </a>
         </div>
       </div>}

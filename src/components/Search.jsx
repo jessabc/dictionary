@@ -22,7 +22,7 @@ export default function Search() {
                     onChange={(e) => setInput(e.target.value)}/>
                     <button>
                         <div className='absolute right-0 top-0 hover:bg-zinc-200 py-8 px-7 rounded-tr-lg rounded-br-lg'>
-                            <img src={iconSearch} alt="" className='absolute right-5 top-5'/>
+                            <img src={iconSearch} alt="magnifying glass icon" className='absolute right-5 top-5'/>
                         </div> 
                     </button>
             </form>
