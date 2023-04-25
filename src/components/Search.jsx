@@ -21,7 +21,7 @@ export default function Search() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}/>
                     <button>
-                        <div className='absolute right-0 top-0 sm:hover:bg-zinc-200sm:dark:hover:bg-zinc-700
+                        <div className='absolute right-0 top-0 sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-700
                         px-7 h-full rounded-tr-lg rounded-br-lg'>
                             <img src={iconSearch} alt="magnifying glass icon" className='absolute right-5 top-5'/>
                         </div> 
