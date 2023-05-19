@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github] (https://github.com/jessabc/dictionary)
-- Live Site URL: [Dictionary app](https://brilliant-liger-921998.netlify.app)
+- Live Site URL: [Dictionary app](https://dictionary-word.netlify.app)
 
 ## My process
 
@@ -70,7 +70,7 @@ I would like to continue to use React Router, and get more comfortable with it, 
 
 ## Author
 
-- Website - [My Portfolio](https://app.netlify.com/sites/kaleidoscopic-speculoos-9506a0/overview)
+- Website - [My Portfolio](https://jessportfolio.netlify.app)
 
 
 ## Acknowledgments
