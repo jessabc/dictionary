@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github] (https://github.com/jessabc/dictionary)
+- Solution URL: [Github](https://github.com/jessabc/dictionary)
 - Live Site URL: [Dictionary app](https://dictionary-word.netlify.app)
 
 ## My process
