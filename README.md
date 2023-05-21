@@ -12,7 +12,6 @@ This is a solution to the [Dictionary web app challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -66,11 +65,6 @@ I would like to continue to use React Router, and get more comfortable with it, 
 - [Toggle Switch](https://dev.to/larainfo/toggle-switch-in-react-js-with-tailwind-css-example-jfk) - I used this for the toggle switch
 - [Theme Switch](https://www.youtube.com/watch?v=VylXkPy-MIc) - This is short and simple youtube tutorial which I have used many times.
 - [Loading animation](https://www.w3schools.com/howto/howto_css_loader.asp) - I used this for the loading animation, I would like to do more loading animations in the future, I think it really adds to the project
-
-
-## Author
-
-- Website - [My Portfolio](https://jessportfolio.netlify.app)
 
 
 ## Acknowledgments
