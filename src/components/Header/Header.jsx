@@ -9,14 +9,15 @@ import iconArrowDown from '../../assets/images/icon-arrow-down.svg'
 export default function Header({selectedFont, setSelectedFont}) {
 
     const [isVisible, setIsVisible] = useState(false)
+
     const navigate = useNavigate()
 
     const {setWordData, setError} = useContext(Context)
     
     function handleClick() {
-         navigate('/');
-         setWordData(null)
-         setError(false)
+        navigate('/');
+        setWordData(null)
+        setError(false)
     }
     
     function changeFont(font) {

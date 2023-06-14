@@ -1,8 +1,9 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { ContextProvider } from './Context'
-import Main from "./pages/Main"
-
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Word from './pages/Word'
 
 function App() {
  
@@ -11,8 +12,10 @@ function App() {
       <BrowserRouter>
         <ContextProvider>
           <Routes>
-            <Route path="/" element={<Main />}/>
-              <Route path="/:word" element={<Main />} />    
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="/:word" element={<Word />} />    
+            </Route>
           </Routes>
         </ContextProvider>
     </BrowserRouter>

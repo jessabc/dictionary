@@ -3,7 +3,8 @@ import { Context } from '../../Context'
 import Meaning from './Meaning'
 import iconPlay from '../../assets/images/icon-play.svg'
 import iconNewWindow from '../../assets/images/icon-new-window.svg'
-import { FaceFrownIcon } from '@heroicons/react/24/outline'
+import Loading from '../Loading'
+import Error from '../Error'
 
 
 export default function Word() {
@@ -26,13 +27,8 @@ export default function Word() {
   return (
     <div className={`${!loading && !wordData && !error ? 'h-screen' : ''}`}>
 
-      {/* Loading */}
-      {loading && 
-      <div className='flex justify-center min-h-screen'>
-          <div className="loader mt-10 "></div>
-      </div>}
+      {loading && <Loading/>}
       
-      {/* Word */}
       {wordData && 
       <div className='min-h-screen'>
         <div className='flex items-center mb-10'>
@@ -54,14 +50,7 @@ export default function Word() {
         </div>
       </div>}
 
-      {/* Error */}
-      {error && 
-      <div className='flex flex-col items-center text-center gap-3 h-screen' >
-        <FaceFrownIcon className="h-10 w-10 text-purple-500"/>
-        <p className='font-semibold dark:text-zinc-50'>{error.data.title} </p>
-        <p className='text-zinc-500'>{error.data.message} {error.data.resolution}</p>   
-        <a href={`https://en.wikipedia.org/wiki/${error.input}`} target="_blank" className='text-purple-500 hover:text-purple-400'>Search on Wikipedia</a>
-      </div>}
+      {error && <Error/>}
 
     </div>
   )

@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { Context } from '../Context'
 import iconSearch from '../assets/images/icon-search.svg'
 
+
 export default function Search() {
 
     const {input, setInput, fetchData} = useContext(Context)

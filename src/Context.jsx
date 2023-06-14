@@ -1,5 +1,6 @@
 import { useState, createContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export const Context = createContext()
 
@@ -12,23 +13,20 @@ export function ContextProvider({children}) {
 
     const navigate = useNavigate()
 
-    function fetchData(input) {
-        setLoading(true)
-        setWordData(null)
-        setError(null)
-
-        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
-            .then(res => res.json()) 
-            .then(data => {
-                if(data[0]) {
-                    setWordData(data[0])  
-                } else {
-                    setError({data, input})
-                }
-                navigate(`/${input}`)
-                setInput('')
-                setLoading(false)
-            })
+    async function fetchData(input) {
+        try {
+            setLoading(true)
+            setWordData(null)
+            setError(null)
+            const {data} = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${input}`)
+            setWordData(data[0])
+            navigate(`/${input}`)
+        } catch(error) {          
+            setError({error: error.response.data, input})
+        } finally {
+            setInput('')
+            setLoading(false)
+        }
     }
 
     
